@@ -2,159 +2,93 @@
 # Module 2 Final Project
 
 
+
 ## Introduction
 
-In this lesson, we'll review all of the guidelines and specifications for the final project for Module 2.
 
-## Objectives
-You will be able to:
-* Describe all required aspects of the final project for Module 2
-* Describe all required deliverables
-* Describe what constitutes a successful project
-
-## Final Project Summary
-
-Another module down--you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-2-project-v2-1/master/halfway-there.gif)
-
-All that remains in Module 2 is to put our newfound data science skills to use with a final project! You should expect this project to take between 20 and 25 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "level up" suggestions. If you're worried that you're going to get to 30 hrs and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
-
-## The Dataset
-
-For this project, you'll be working with the King County House Sales dataset. We've modified the dataset to make it a bit more fun and challenging.  The dataset can be found in the file `"kc_house_data.csv"`, in this repo.
-
-The description of the column names can be found in the column_names.md file in this repository. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
-
-You'll clean, explore, and model this dataset with a multivariate linear regression to predict the sale price of houses as accurately as possible.
-
-## The Deliverables
-
-For online students, there will be five deliverables for this project (Note: On-campus students may have different requirements, please speak with your instructor):
-
-1. A well documented **Jupyter Notebook** containing any code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project.  
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders. Make sure to also add and commit this pdf of your non-technical presentation to your repository with a file name of presentation.pdf.
-4. **[A Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1)**	
-5. A **Video Walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
-
-Note: On-campus students may have different requirements, please speak with your instructor.
-
-### Jupyter Notebook Must-Haves
-
-For this project, your Jupyter Notebook should meet the following specifications:
-
-#### Organization/Code Cleanliness
-
-* The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-
-#### Visualizations & EDA
-
-* Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
-    * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
-* Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-
-#### Model Quality/Approach
-
-* Your model should not include any predictors with p-values greater than .05.  
-* Your notebook shows an iterative approach to modeling, and details the parameters and results of the model at each iteration.  
-    * **Level Up**: Whenever necessary, you briefly explain the changes made from one iteration to the next, and why you made these choices.  
-* You provide at least 1 paragraph explaining your final model.   
-* You pick at least 3 coefficients from your final model and explain their impact on the price of a house in this dataset.   
+With the housing data, I set out to create the simplest linear regression model possible given the information available. Along with fulfilling all the required assumptions of linear regression, I also sought out to obtain an R^2 value of atleast .55. This process required a lot of guess and check, creating several different models until I was satisfied with the results. I was even able to make some variables of my own to help the accuracy and simplicity of my model. 
 
 
-### Non-Technical Presentation Must-Haves
-
-Another deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home.
-
-Your presentation should:
-
-* Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
-* Take no more than 5 minutes to present.   
-* Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.   
-
-**_Based on the results of your models, your presentation should discuss at least two concrete features that highly influence housing prices._**
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1) for the technical requirements and blog ideas.
+## Objectives:
 
 
-## The Process 
-The process for this project is identical to the process you followed for your module 1 project. We specified it again below as a refresher.
-(Note: On-campus students may have different processes, please speak with your instructor)
-
-### 1. Getting Started
-
-Please start by reviewing this document. If you have any questions, please ask them in Slack ASAP so (a) we can answer the questions and (b) so we can update this repository to make it clearer.
-
-Be sure to let the instructor team know when you’ve started working on a project, either by reaching out over Slack or, if you are in a full-time or part-time cohort, by connecting with your Cohort Lead in your weekly 1:1. If you’re not sure who to reach out to, post in the #online-ds-sp-000 channel in Slack.
-
-Once you're done with this module, please start on the project. Do that by forking this repository, cloning it locally, and working in the student.ipynb file. Make sure to also add and commit a pdf of your presentation to the repository with a file name of `presentation.pdf`.
-
-### 2. The Project Review
-
-_Note: On-campus students may have different review processes, please speak with your instructor._
-
-> **When you start on the project, please also reach out to an instructor immediately to schedule your project review** (if you're not sure who to schedule with, please ask in Slack!)
-
-#### What to expect from the Project Review
-
-Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation *(sometimes technical interviews will feel arbitrary or unfair - if you want to get the job, commenting on that is seldom a good choice)*.
-
-The project review is comprised of a 45 minute 1:1 session with one of the instructors. During your project review, be prepared to:
-
-#### 1. Deliver your PDF presentation to a non-technical stakeholder.
-In this phase of the review (~10 mins) your instructor will play the part of a non-technical stakeholder that you are presenting your findings to. The presentation  should not exceed 5 minutes, giving the "stakeholder" 5 minutes to ask questions.
-
-In the first half of the presentation (2-3 mins), you should summarize your methodology in a way that will be comprehensible to someone with no background in data science and that will increase their confidence in you and your findings. In the second half (the remaining 2-3 mins) you should summarize your findings and be ready to answer a couple of non-technical questions from the audience. The questions might relate to technical topics (sampling bias, confidence, etc) but will be asked in a non-technical way and need to be answered in a way that does not assume a background in statistics or machine learning. You can assume a smart, business stakeholder, with a non-quantitative college degree.
-
-#### 2. Go through the Jupyter Notebook, answering questions about how you made certain decisions. Be ready to explain things like:
-    * "How did you pick the question(s) that you did?"
-    * "Why are these questions important from a business perspective?"
-    * "How did you decide on the data cleaning options you performed?"
-    * "Why did you choose a given method or library?"
-    * "Why did you select those visualizations and what did you learn from each of them?"
-    * "Why did you pick those features as predictors?"
-    * "How would you interpret the results?"
-    * "How confident are you in the predictive quality of the results?"
-    * "What are some of the things that could cause the results to be wrong?"
-
-Think of the first phase of the review (~30 mins) as a technical boss reviewing your work and asking questions about it before green-lighting you to present to the business team. You should practice using the appropriate technical vocabulary to explain yourself. Don't be surprised if the instructor jumps around or sometimes cuts you off - there is a lot of ground to cover, so that may happen.
-
-If any requirements are missing or if significant gaps in understanding are uncovered, be prepared to do one or all of the following:
-* Perform additional data cleanup, visualization, feature selection, modeling and/or model validation
-* Submit an improved version
-* Meet again for another Project Review
-
-What won't happen:
-* You won't be yelled at, belittled, or scolded
-* You won't be put on the spot without support
-* There's nothing you can do to instantly fail or blow it
-
-**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.**
+Main criteria to fulfill:
+* Create the simplest linear regression model possible
+* Obtain an R^2 value above .55
+* Create and use atleast one engineered variable in the final model
 
 
-## Submitting your Project
-
- You’re almost done! In order to submit your project for review, include the following links to your work in the corresponding fields on the right-hand side of Learn.
-
- 1. **GitHub Repo:** Now that you’ve completed your project in Jupyter Notebooks, push your work to GitHub and paste that link to the right. (If you need help doing so, review the resources [here](https://docs.google.com/spreadsheets/d/1CNGDhjcQZDRx2sWByd2v-mgUOjy13Cd_hQYVXPuzEDE/edit#gid=0).)
-_Reminder: Make sure to also add and commit a pdf of your non-technical presentation to the repository with a file name of presentation.pdf._
-2. **Blog Post:** Include a link to your blog post.
-3. **Record Walkthrough:** Include a link to your video walkthrough.
-
- Hit "I'm done" to wrap it up. You will receive an email in order to schedule your review with your instructor.
- 
- 
-## Grading Rubric
-Online students can find a PDF of the grading rubric for the project [here](https://github.com/learn-co-curriculum/dsc-mod-2-project-v2-1/blob/master/mod2_project_rubric.pdf). On-campus students may have different review processes, please speak with your instructor.
+## Business
 
 
-## Summary
+From a business point of view, this model would mostly be used for aspiring first-time home owners in the King-County area who want a ball-park estimate of how much money they need to end up spending for a particular house of a certain size, grade, and location.
 
-The end of module projects and project reviews are a critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.
+
+
+## Engineered Variables
+
+
+
+Everyone knows that location is a very important factor for housing. The same house in a good neighborhood can be worth drastically more than in a bad neighborhood. Instead of turning zip codes into categorical variables, I decided it would be best to find a single number to describe location for each row. What I ultimately decided to do was to find the richest and poorest neighborhoods out of all the zip codes, and then find the mean latitude and longitude coordinates of the richest and poorest neighborhoods. From there, I made two seperate variables that were able to find out how far each house was from the poorest, and richest neighborhoods in km. 
+
+<img src="Pictures/distance variable.png">
+
+
+For the distance from the poorest neighborhood, I was expecting the price to go up the higher the value of x was from 0, and the opposite for the distance from the richest neighborhood. Each of the scatter plots followed a relatively strong negative correlation, meaning that the data for distance from the richest neighborhood could possibly provide some meaningful information. As it turned out, this variable also ended up in my final model.
+
+
+Another engineered variable created tracked the years since each house had been renovated. Houses that had never been renovated had a value of zero.
+
+
+<img src="Pictures/Renovation.png">
+
+While the houses that had been renovated followed a relatively strong negative relationship, this model was eventually wasn't used in the final model just due to the fact that there were many houses that also had never been renovated that were still selling for either very high or low prices.
+
+
+
+
+# Final Model
+
+
+
+One surprise to me was that the amount of bedrooms wasn't used in the final model. While number of bedrooms is typically another important feature that is critical in deciding the price of a house, the data for bedrooms wasn't the most helpful in this data set. 
+
+
+<img src="Pictures/Bedrooms.png">
+
+
+
+While there is a general pattern for houses that have 1-5 bedrooms, houses that have more than 5 bedrooms start to decline in price. There is also not much data for houses above 6 bedrooms, resulting in fairly high p-values/variance for each model run with bedrooms included as a variable. While it does seem like an important factor for deciding the price of a house, the final model was able to pass all goals/assumptions even without bedrooms as a main variable.
+
+
+# Variables Used
+
+#### Square Feet
+#### Grade
+#### Distance from Richest Neighborhood
+
+
+
+The variables that ended up being used in the final model were the grade of the house, the amount of square feet, and the distance from the mean coordinated of the richest neighborhood. Each of these variables worked in the final model because they each shared a positive correlation with the price of the house. 
+
+
+<img src="Pictures/Final_Variables.png">
+
+
+While Distance from the richest neighborhood shared a negative relationship with the price of the house, we can see above that both square feet, and grade of the house shared a positive relationship with the price. In the final model, all models were included as continuous variables, even the grade of the house. While the grade looks like it could have been categorical, it ended up working better as a continuous variable in the final model. 
+
+
+
+# Final Model Results
+
+
+<img src="Pictures/Results.png">
+
+
+As seen, an R^2 value of above .55 was achieved, as well as p-values below .05 for all of the variables. The natural log of the price was used as the dependent variable in order to achieve homoscedasticity. The results essentially show that the natural log of the price increases by .0002 for each extra square foot, decreases by .0158 for each km away from the richest neighborhood, and increases by .1540 for each extra improvement in grade. These results make sense, as we expect price to go up for extra square feet and improvement in grade, as well as price to go down for each additional km away from the richest neighborhood.
+
+
+# Conclusion 
+
+
+All the objectives written out at the beginning of the project have been accomplished. Furthermore, the model has obtained type of simplicity where an individual not too familiar with math/data science can still be able to predict the value of a house given some simple multiplication and addition. 
