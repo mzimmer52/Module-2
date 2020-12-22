@@ -85,10 +85,10 @@ While Distance from the richest neighborhood shared a negative relationship with
 <img src="Pictures/Results.png">
 
 
-As seen, an R^2 value of above .55 was achieved, as well as p-values below .05 for all of the variables. The natural log of the price was used as the dependent variable in order to achieve homoscedasticity. The results essentially show that the natural log of the price increases by .0002 for each extra square foot, decreases by .0158 for each km away from the richest neighborhood, and increases by .1540 for each extra improvement in grade. These results make sense, as we expect price to go up for extra square feet and improvement in grade, as well as price to go down for each additional km away from the richest neighborhood.
+As seen, an R^2 value of above .55 was achieved, as well as p-values below .05 for all of the variables. The natural log of the price was used as the dependent variable in order to achieve homoscedasticity. The results essentially show that the natural log of the price increases by .0002 for each extra square foot(.02% increase in price), decreases by .0158 for each km away from the richest neighborhood(1.56% decrease in price), and increases by .1540 for each extra improvement in grade(16.6% increase in price). These results make sense, as we expect price to go up for extra square feet and improvement in grade, as well as price to go down for each additional km away from the richest neighborhood.
 
 
 # Conclusion 
 
 
-All the objectives written out at the beginning of the project have been accomplished. Furthermore, the model has obtained type of simplicity where an individual not too familiar with math/data science can still be able to predict the value of a house given some simple multiplication and addition. 
+All the objectives written out at the beginning of the project have been accomplished. Furthermore, the model has obtained type of simplicity where only three variables are used while still maintaining a baseline of accuracy. 
